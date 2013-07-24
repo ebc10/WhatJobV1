@@ -1,0 +1,76 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Question:"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@id/button1" 
+        android:textSize="30.0sp"
+         android:gravity="center"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:paddingBottom="@dimen/moreDistance" >
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        style="@drawable/yes"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_weight="0"
+        android:background="@drawable/yes"
+        android:gravity="center"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        style="@drawable/no"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_weight="0"
+        android:background="@drawable/no"
+        android:gravity="center" />
+    
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+             style="@drawable/go"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/go" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            style="@drawable/myresults"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/myresults"
+            />
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>
